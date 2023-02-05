@@ -6,7 +6,7 @@ const { default: apiPath } = require("app/apiPath");
 export const getScheduleMovieCinema = async(maHeThongRap) => {
     const res = await requester({
         method: "GET",
-        url: apiPath.SCHEDULE_CINAMAS + `?maHeThongRap=${maHeThongRap}&maNhom=GP09`,            
+        url: apiPath.SCHEDULE_CINAMAS + `?maHeThongRap=${maHeThongRap}&maNhom=GP10`,            
     });
     return res;
 }

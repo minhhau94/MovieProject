@@ -7,6 +7,7 @@ const inititalState = {
     movieDetail: null,
     movieDetailSchedule: null,
     cinemas: [],
+    chairList: [],
 };
 
 // thay vì đưa action thì đưa trực tiếp {type, payload} vào

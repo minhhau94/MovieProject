@@ -1,3 +1,4 @@
+import { UserOutlined } from "@ant-design/icons";
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
@@ -9,7 +10,7 @@ const Header = () => {
     <header className="bg-slate-900 h-20">
       <div className="container h-full mx-auto flex justify-between items-center">
         <Link to="/" className="text-3xl text-white">
-          Cyber Movie
+          <img className="w-24" src="https://img.freepik.com/free-vector/retro-cinema-background_52683-1701.jpg" alt=""/>
         </Link>
         {profile ? (
         <span className="text-xl text-white">{""}Xin Chào, {profile.hoTen}{""}</span>
@@ -19,14 +20,14 @@ const Header = () => {
             if (isActive) return "text-yellow-200 text-lg";
             return "text-white text-lg"
           }}>
-            Đăng nhập
+            <UserOutlined /> Đăng nhập
           </NavLink>
           <span className="text-white text-xl"> | </span>
           <NavLink to="/signup" className={({ isActive }) => {
             if (isActive) return "text-yellow-200 text-lg";
             return "text-white text-lg"
           }}>
-            Đăng ký
+            <UserOutlined /> Đăng ký
           </NavLink>
         </nav>)}
       </div>

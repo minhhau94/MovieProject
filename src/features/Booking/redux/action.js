@@ -5,9 +5,9 @@ import action from "./type";
 export const fetchBannersAction = async (next) => {
     try{
         const res = await requester({
-            method: "GET",
             // khi sử dụng request thì có sẵng baseURL nên chỉ cần cop khúc sau url, dùng apiPath để giấu code
-            url: apiPath.BANNERS,            
+            url: apiPath.BANNERS,
+            method: "GET",        
         });
 
         next({
@@ -27,9 +27,9 @@ export const fetchMoviesAction = (page=1) => {
                 url: apiPath.MOVIES,
                 method: "GET",
                 params: {
-                    maNhom: "GP09",
+                    maNhom: "GP10",
                     soTrang: page,
-                    soPhanTuTrenTrang: 8,
+                    soPhanTuTrenTrang: 12,
                 },
             });
             next({
