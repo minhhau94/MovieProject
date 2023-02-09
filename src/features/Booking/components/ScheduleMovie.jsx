@@ -53,7 +53,7 @@ const ScheduleMovie = () => {
                       key: itemCumRap.maCumRap,
                       children: (
                         <div
-                          className="overflow-y-auto "
+                          className="overflow-y-auto"
                           style={{ height: 600 }}
                         >
                           {itemCumRap?.danhSachPhim
